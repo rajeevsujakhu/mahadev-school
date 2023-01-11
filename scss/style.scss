@@ -1,0 +1,133 @@
+
+
+$brand : #004A89;
+
+
+.head
+{
+    background-color: #D6F0FF;
+    .header 
+    {
+        .logo
+        {
+            img 
+            {
+                width: 100%;
+            }
+        }
+        ul 
+        {
+            padding-left: 0;
+            margin: 0;
+            padding-top: 10px;
+            list-style: none;
+            li 
+            {
+                display: inline;
+                padding-left: 12px;
+                color: #2D3171;
+                &:hover
+                {
+                    color: #4054B2;
+                }
+            }
+        }
+    }
+}
+
+
+
+.navbar 
+{
+    background-color: $brand;
+    nav
+    {
+        .mainnav 
+        {
+            padding: 0;
+            margin: 0;
+            .navitems
+            {
+                list-style: none;
+                display: inline-block;
+                position: relative;
+                a 
+                {
+                    display: block;
+                    padding: 0 15px;
+                    color: white;
+                    text-decoration: none;
+                    line-height: 60px;
+                    transition: 0.3s;
+                    &:hover
+                    {
+                        color: #73777F;
+                    }
+                }
+                .fdown
+                {
+                    li 
+                    {
+                        width: 310px;
+                    }
+                }
+                &:hover
+                {
+                    .dropdown 
+                    {
+                        display: block;
+                    }
+                }
+            }
+            .dropdown
+            {
+                position: absolute;
+                list-style: none;
+                top: 60px;
+                margin: 0;
+                padding: 0;
+                background-color: $brand;
+                display: none;
+                li 
+                {
+                    width: 200px;
+                    display: list-item;
+                    a 
+                    {
+                        line-height: 35px;
+                    }
+                }
+                .navitem2 
+                {
+                    position: relative;
+                    &:hover
+                    {
+                        .dropdown2
+                        {
+                            display: block;
+                        }
+                    }
+                }
+                .dropdown2
+                {
+                    margin: 0;
+                    padding: 0;
+                    display: none;
+                    position: absolute;
+                        top: -5px;
+                        left: 200px;
+                    li 
+                    {
+                        list-style: none;
+                        
+                        background-color: $brand;
+                        a 
+                        {
+                            line-height: 40px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
