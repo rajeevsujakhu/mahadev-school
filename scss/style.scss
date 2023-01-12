@@ -155,10 +155,19 @@ $brand : #004A89;
 .headhistory
 {
     padding-top: 40px;
+    padding-bottom: 70px;
+    .col-lg-8
+    {
+        padding-right: 20px;
+        border-right: 1px solid black;
+    }
+    .col-lg-4
+    {
+        padding-left: 30px;
+    }
     .history
     {
         padding-right: 40px;
-        border-right: 1px solid black;
         h3 
         {
             color: $brand;
@@ -167,6 +176,30 @@ $brand : #004A89;
         img 
         {
             padding-bottom: 20px;
+        }
+    }
+    .table
+    {
+        th 
+        {
+            background-color: $brand;
+            color: white;
+        }
+        tr:hover
+        {
+            background-color: #F3F3F3;
+        }
+        .table.dataTable thead > tr > th.sorting:after, table.dataTable thead > tr > th.sorting_asc:after
+        {
+            opacity: 0.6;
+        }
+        .table.dataTable thead > tr > th.sorting:before, table.dataTable thead > tr > th.sorting_asc:before
+        {
+            opacity: 0.6;
+        }
+        .table.dataTable thead > tr > th.sorting:before, table.dataTable thead > tr > th.sorting_asc:before
+        {
+            bottom: 54%;
         }
     }
     h5 

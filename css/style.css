@@ -130,11 +130,20 @@
 
 .headhistory {
   padding-top: 40px;
+  padding-bottom: 70px;
+}
+
+.headhistory .col-lg-8 {
+  padding-right: 20px;
+  border-right: 1px solid black;
+}
+
+.headhistory .col-lg-4 {
+  padding-left: 30px;
 }
 
 .headhistory .history {
   padding-right: 40px;
-  border-right: 1px solid black;
 }
 
 .headhistory .history h3 {
@@ -144,6 +153,27 @@
 
 .headhistory .history img {
   padding-bottom: 20px;
+}
+
+.headhistory .table th {
+  background-color: #004A89;
+  color: white;
+}
+
+.headhistory .table tr:hover {
+  background-color: #F3F3F3;
+}
+
+.headhistory .table .table.dataTable thead > tr > th.sorting:after, .headhistory .table table.dataTable thead > tr > th.sorting_asc:after {
+  opacity: 0.6;
+}
+
+.headhistory .table .table.dataTable thead > tr > th.sorting:before, .headhistory .table table.dataTable thead > tr > th.sorting_asc:before {
+  opacity: 0.6;
+}
+
+.headhistory .table .table.dataTable thead > tr > th.sorting:before, .headhistory .table table.dataTable thead > tr > th.sorting_asc:before {
+  bottom: 54%;
 }
 
 .headhistory h5 {
