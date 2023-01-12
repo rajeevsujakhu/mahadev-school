@@ -104,4 +104,214 @@
 .navbar nav .mainnav .dropdown .dropdown2 li a {
   line-height: 40px;
 }
+
+.navbar nav .checkbtn, .navbar nav .checkbtn1 {
+  font-size: 30px;
+  color: white;
+  padding-top: 5px;
+  cursor: pointer;
+  display: none;
+}
+
+.navbar nav .checkbtn1 {
+  display: block;
+  height: 10px;
+  position: relative;
+  left: -150px;
+  top: -250px !important;
+  z-index: 9;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.navbar nav #click {
+  display: none;
+}
+
+.headhistory {
+  padding-top: 40px;
+}
+
+.headhistory .history {
+  padding-right: 40px;
+  border-right: 1px solid black;
+}
+
+.headhistory .history h3 {
+  color: #004A89;
+  padding-bottom: 20px;
+}
+
+.headhistory .history img {
+  padding-bottom: 20px;
+}
+
+.headhistory h5 {
+  color: #004A89;
+}
+
+.headhistory .spart .field {
+  width: 100%;
+  font-size: 14px;
+  line-height: 1.8;
+  padding: 6px 12px;
+  vertical-align: middle;
+  background-color: transparent;
+  color: #333;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+}
+
+.headhistory .spart .vacancy {
+  color: #004A89;
+  padding: 16px 0;
+}
+
+.headhistory .spart .calendar {
+  border-left: 5px solid #004A89;
+}
+
+.headhistory .spart table {
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  line-height: 40px;
+  text-align: center;
+}
+
+.headhistory .spart table thead {
+  padding: 10px 0;
+  border-bottom: 0.3px solid #888585;
+}
+
+.footer {
+  background-color: #004A89;
+  color: white;
+}
+
+.footer .fpart {
+  text-align: center;
+}
+
+.footer .fpart ul {
+  padding-left: 0;
+}
+
+.footer .fpart ul li {
+  list-style: none;
+  display: inline;
+}
+
+.footer .fpart ul li a {
+  padding-left: 10px;
+  color: white;
+}
+
+.footer .fpart p {
+  padding: 10px 0;
+}
+
+.footer .spart ul {
+  padding-left: 0;
+}
+
+.footer .spart ul li {
+  list-style: none;
+  display: inline;
+}
+
+.footer .spart ul li a {
+  color: white;
+  padding-left: 10px;
+}
+
+.footer .tpart ul li {
+  line-height: 34px;
+}
+
+.footer .tpart ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer .fopart {
+  line-height: 16px;
+}
+
+.footer .fopart ul li {
+  display: inline;
+  padding-left: 10px;
+}
+
+.footer .fopart ul li a {
+  color: white;
+}
+
+.footer .copyright {
+  border-top: 0.3px solid black;
+  padding: 20px 0;
+}
+
+.footer .copyright p {
+  margin: 0;
+}
+
+.arrow {
+  z-index: 999;
+  display: none;
+}
+
+.arrow button {
+  background-color: #73777F;
+  border-radius: 2px;
+  padding: 10px 14px;
+  border: 0;
+  position: fixed;
+  bottom: 70px;
+  right: 40px;
+  color: white;
+}
+
+@media (max-width: 480px) {
+  .head .socials {
+    text-align: center;
+  }
+  .head .socials li {
+    padding: 0 10px;
+  }
+  .head .abouts {
+    font-size: 14px;
+    text-align: center;
+  }
+  nav .mainnav {
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    left: -100%;
+    height: 100vh;
+    text-align: center;
+    background-color: #004A89;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+  }
+  nav .mainnav .navitems {
+    display: block !important;
+  }
+  nav .mainnav a {
+    line-height: 34px !important;
+  }
+  nav .checkbtn {
+    display: block !important;
+    position: relative;
+    left: 250px;
+  }
+  nav #click:checked ~ .mainnav {
+    left: 0;
+  }
+  nav #click:checked ~ .checkbtn1 {
+    left: 250px;
+  }
+  .history {
+    border: none !important;
+  }
+}
 /*# sourceMappingURL=style.css.map */

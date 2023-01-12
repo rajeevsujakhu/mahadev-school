@@ -35,8 +35,6 @@ $brand : #004A89;
     }
 }
 
-
-
 .navbar 
 {
     background-color: $brand;
@@ -129,5 +127,250 @@ $brand : #004A89;
                 }
             }
         }
+        .checkbtn , .checkbtn1
+        {
+            font-size: 30px;
+            color: white;
+            padding-top: 5px;
+            cursor: pointer;
+            display: none;
+        }
+        .checkbtn1
+        {
+            display: block;
+            height: 10px;
+            position: relative;
+            left: -150px;
+            top: -250px !important;
+            z-index: 9;
+            transition: 0.4s;
+        }
+        #click 
+        {
+            display: none;
+        }
+    }
+}
+
+.headhistory
+{
+    padding-top: 40px;
+    .history
+    {
+        padding-right: 40px;
+        border-right: 1px solid black;
+        h3 
+        {
+            color: $brand;
+            padding-bottom: 20px;
+        }
+        img 
+        {
+            padding-bottom: 20px;
+        }
+    }
+    h5 
+    {
+        color: $brand;
+    }
+    .spart
+    {
+        .field
+        {
+            width: 100%;
+            font-size: 14px;
+            line-height: 1.8;
+            padding: 6px 12px;
+            vertical-align: middle;
+            background-color: transparent;
+            color: #333;
+            border: 1px solid #ddd;
+            border-radius: 3px;
+        }
+        .vacancy
+        {
+            color: $brand;
+            padding: 16px 0;
+        }
+        .calendar
+        {
+            border-left: 5px solid $brand;
+        }
+        table
+        {
+            border-top: 2px solid black;
+            border-bottom: 2px solid black;
+            line-height: 40px;
+            text-align: center;
+            thead
+            {
+                padding: 10px 0;
+                border-bottom: 0.3px solid rgb(136, 133, 133);
+            }
+        }
+    }
+}
+
+.footer
+{
+    background-color: $brand;
+    color: white;
+    .fpart 
+    {
+        text-align: center;
+        ul 
+        {
+            padding-left: 0;
+            li
+            {
+                list-style: none;
+                display: inline;
+                a 
+                {
+                    padding-left: 10px;
+                    color: white;
+                }
+            }
+        }
+        p 
+        {
+            padding: 10px 0;
+        }
+    }
+    .spart
+    {
+        ul 
+        {
+            padding-left: 0;
+            li 
+            {
+                list-style: none;
+                display: inline; 
+                a
+                {
+                    color: white;
+                    padding-left: 10px;
+                }
+            }
+        }
+    }
+    .tpart
+    {
+        ul 
+        {
+            li 
+            {
+                line-height: 34px;
+                a 
+                {
+                    color: white;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+    .fopart
+    {
+        line-height: 16px;
+        ul 
+        {
+            li 
+            {
+                display: inline;
+                padding-left: 10px;
+                a 
+                {
+                    color: white;
+                }
+            }
+        }
+    }
+    .copyright
+    {
+        border-top: 0.3px solid black;
+        padding: 20px 0;
+        p 
+        {
+            margin: 0;
+        }
+    }
+}
+
+.arrow
+{
+    z-index: 999;
+    display: none;
+    button
+    {
+        background-color: #73777F;
+        border-radius: 2px;
+        padding: 10px 14px;
+        border: 0;
+        position: fixed;
+        bottom: 70px;
+        right: 40px;
+        color: white;
+    }
+}
+
+
+@media(max-width:480px)
+{
+    .head 
+    {
+        .socials
+        {
+            text-align: center;
+            li 
+            {
+                padding: 0 10px;
+            }
+        }
+        .abouts 
+        {
+            font-size: 14px;
+            text-align: center;
+        }
+    }
+    nav 
+    {
+        .mainnav 
+        {
+            position: fixed;
+            width: 100%;
+            top: 0px;
+            left: -100%;
+            height: 100vh;
+            text-align: center;
+            background-color: $brand;
+            transition: all .5s;
+            .navitems
+            {
+                display: block !important;
+            }
+            a 
+            {
+                line-height: 34px !important;
+            }
+        }
+        .checkbtn 
+        {
+            display: block !important;
+            position: relative;
+            left: 250px;
+        }
+        
+        #click:checked ~ .mainnav
+        {
+            left: 0;
+        }
+        #click:checked ~ .checkbtn1
+        {
+            left: 250px;
+        }
+    }
+    .history 
+    {
+        border: none !important;
     }
 }
