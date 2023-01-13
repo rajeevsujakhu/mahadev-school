@@ -5,9 +5,24 @@ $brand : #004A89;
 
 .head
 {
+    text-align: center;
     background-color: #D6F0FF;
     .header 
     {
+        .abouts
+        {
+            padding-top: 15px;
+        }
+        .lswitch
+        {
+            display: flex;
+            padding-top: 15px;
+            p 
+            {
+                padding-right: 5px;
+                margin: 0;
+            }
+        }
         .logo
         {
             img 
@@ -19,7 +34,6 @@ $brand : #004A89;
         {
             padding-left: 0;
             margin: 0;
-            padding-top: 10px;
             list-style: none;
             li 
             {
