@@ -180,8 +180,12 @@
   color: #004A89;
 }
 
+.headhistory .spart {
+  padding-left: 20px;
+}
+
 .headhistory .spart .field {
-  width: 100%;
+  width: 74%;
   font-size: 14px;
   line-height: 1.8;
   padding: 6px 12px;
