@@ -117,8 +117,8 @@
   display: block;
   height: 10px;
   position: relative;
-  left: -150px;
-  top: -250px !important;
+  left: -250px;
+  top: -250px;
   z-index: 9;
   -webkit-transition: 0.4s;
   transition: 0.4s;
@@ -300,9 +300,121 @@
   padding: 10px 14px;
   border: 0;
   position: fixed;
-  bottom: 70px;
+  bottom: 40px;
   right: 40px;
   color: white;
+}
+
+@media (max-width: 1400px) {
+  .navbar nav .mainnav .navitems a {
+    padding: 0 12px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .navbar nav .mainnav .navitems a {
+    padding: 0 39px;
+  }
+  .headhistory .col-lg-4 {
+    padding-left: 20px;
+  }
+}
+
+@media (max-width: 1024px) {
+  nav .mainnav {
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    left: -100%;
+    height: 100vh;
+    text-align: center;
+    background-color: #004A89;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+  }
+  nav .mainnav .navitems {
+    display: block !important;
+  }
+  nav .mainnav a {
+    line-height: 34px !important;
+  }
+  nav .checkbtn {
+    display: block !important;
+    position: relative;
+    left: 650px;
+  }
+  nav #click:checked ~ .mainnav {
+    left: 0;
+  }
+  nav #click:checked ~ .checkbtn1 {
+    left: 550px;
+    top: -330px;
+  }
+  .headhistory .col-lg-8 {
+    border: none;
+  }
+  .headhistory .col-lg-4 {
+    padding-left: 10px;
+  }
+  .footer .fpart img {
+    width: 40%;
+  }
+  .footer .fpart p {
+    padding-top: 20px;
+  }
+  .footer .spart, .footer .fopart {
+    text-align: center;
+    padding-top: 20px;
+  }
+  .footer .tpart {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-top: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .checkbtn {
+    display: block !important;
+    position: relative;
+    left: 460px !important;
+  }
+  #click:checked ~ .checkbtn1 {
+    left: 400px !important;
+    top: -280px !important;
+  }
+  .arrow button {
+    bottom: 40px;
+    right: 40px;
+  }
+}
+
+@media (max-width: 600px) {
+  .checkbtn {
+    display: block !important;
+    position: relative;
+    left: 400px !important;
+  }
+  #click:checked ~ .checkbtn1 {
+    left: 400px !important;
+    top: -280px !important;
+  }
+  .arrow button {
+    bottom: 40px;
+    right: 40px;
+  }
+  .headhistory {
+    padding-left: 10px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -336,7 +448,7 @@
   nav .checkbtn {
     display: block !important;
     position: relative;
-    left: 250px;
+    left: 260px !important;
   }
   nav #click:checked ~ .mainnav {
     left: 0;
@@ -344,8 +456,8 @@
   nav #click:checked ~ .checkbtn1 {
     left: 250px;
   }
-  .history {
-    border: none !important;
+  .headhistory .spart {
+    padding-left: 0;
   }
 }
 /*# sourceMappingURL=style.css.map */
