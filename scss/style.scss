@@ -554,7 +554,8 @@ $brand : #004A89;
         }
         #click:checked ~ .checkbtn1
         {
-            left: 250px;
+            left: 250px !important;
+            top: -250px !important;
         }
     }
     .headhistory .spart
