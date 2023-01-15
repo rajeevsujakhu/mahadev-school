@@ -422,7 +422,7 @@ $brand : #004A89;
                     position: relative;
                     width: 100%;
                     top: 0px;
-                    left: 180px;
+                    left: 320px !important;
                     text-align: left;
                     .dropdown2 
                     {
@@ -495,6 +495,20 @@ $brand : #004A89;
 
 @media(max-width:768px)
 {
+    .dropdown
+    {
+        position: relative;
+        width: 100%;
+        top: 0px;
+        left: 280px !important;
+        text-align: left;
+        .dropdown2 
+        {
+            position: relative;
+            width: 100%;
+            left: 10px;
+        }
+    }
     .checkbtn 
     {
         display: block !important;
@@ -518,6 +532,20 @@ $brand : #004A89;
 
 @media(max-width:600px)
 {
+    .dropdown
+    {
+        position: relative;
+        width: 100%;
+        top: 0px;
+        left: 200px !important;
+        text-align: left;
+        .dropdown2 
+        {
+            position: relative;
+            width: 100%;
+            left: 10px;
+        }
+    }
     .checkbtn 
     {
         display: block !important;
@@ -568,6 +596,20 @@ $brand : #004A89;
     }
     nav 
     {
+        .dropdown
+        {
+            position: relative;
+            width: 100%;
+            top: 0px;
+            left: 180px !important;
+            text-align: left;
+            .dropdown2 
+            {
+                position: relative;
+                width: 100%;
+                left: 10px !important;
+            }
+        }
         .mainnav 
         {
             position: fixed;

@@ -374,7 +374,7 @@
     position: relative;
     width: 100%;
     top: 0px;
-    left: 180px;
+    left: 320px !important;
     text-align: left;
   }
   nav .mainnav .navitems .dropdown .dropdown2 {
@@ -429,6 +429,18 @@
 }
 
 @media (max-width: 768px) {
+  .dropdown {
+    position: relative;
+    width: 100%;
+    top: 0px;
+    left: 280px !important;
+    text-align: left;
+  }
+  .dropdown .dropdown2 {
+    position: relative;
+    width: 100%;
+    left: 10px;
+  }
   .checkbtn {
     display: block !important;
     position: relative;
@@ -445,6 +457,18 @@
 }
 
 @media (max-width: 600px) {
+  .dropdown {
+    position: relative;
+    width: 100%;
+    top: 0px;
+    left: 200px !important;
+    text-align: left;
+  }
+  .dropdown .dropdown2 {
+    position: relative;
+    width: 100%;
+    left: 10px;
+  }
   .checkbtn {
     display: block !important;
     position: relative;
@@ -481,6 +505,18 @@
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+  nav .dropdown {
+    position: relative;
+    width: 100%;
+    top: 0px;
+    left: 180px !important;
+    text-align: left;
+  }
+  nav .dropdown .dropdown2 {
+    position: relative;
+    width: 100%;
+    left: 10px !important;
   }
   nav .mainnav {
     position: fixed;
