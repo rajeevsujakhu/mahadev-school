@@ -54,6 +54,7 @@ $brand : #004A89;
     background-color: $brand;
     nav
     {
+        z-index: 99999;
         .mainnav 
         {
             padding: 0;
@@ -69,7 +70,7 @@ $brand : #004A89;
                     padding: 0 15px;
                     color: white;
                     text-decoration: none;
-                    line-height: 60px;
+                    line-height: 34px;
                     transition: 0.3s;
                     &:hover
                     {
@@ -95,7 +96,7 @@ $brand : #004A89;
             {
                 position: absolute;
                 list-style: none;
-                top: 60px;
+                top: 30px;
                 margin: 0;
                 padding: 0;
                 background-color: $brand;
@@ -389,6 +390,17 @@ $brand : #004A89;
 
 @media(max-width:1024px)
 {
+    .language 
+    {
+        display: flex;
+        justify-content: center;
+    }
+    .navbar nav .mainnav .navitems a
+    {
+        padding: 0 12px;
+        font-size: 18px !important;
+        line-height: 38px !important;
+    }
     nav 
     {
         .mainnav 
@@ -404,6 +416,21 @@ $brand : #004A89;
             .navitems
             {
                 display: block !important;
+                border-bottom: 1px solid rgba(165, 164, 164, 0.3);
+                .dropdown
+                {
+                    position: relative;
+                    width: 100%;
+                    top: 0px;
+                    left: 180px;
+                    text-align: left;
+                    .dropdown2 
+                    {
+                        position: relative;
+                        width: 100%;
+                        left: 10px;
+                    }
+                }
             }
             a 
             {
@@ -533,6 +560,11 @@ $brand : #004A89;
             font-size: 14px;
             text-align: center;
         }
+        .language 
+        {
+            display: flex;
+            justify-content: center;
+        }
     }
     nav 
     {
@@ -559,7 +591,7 @@ $brand : #004A89;
         {
             display: block !important;
             position: relative;
-            left: 260px !important;
+            left: 300px !important;
         }
         
         #click:checked ~ .mainnav

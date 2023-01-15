@@ -43,6 +43,10 @@
   background-color: #004A89;
 }
 
+.navbar nav {
+  z-index: 99999;
+}
+
 .navbar nav .mainnav {
   padding: 0;
   margin: 0;
@@ -59,7 +63,7 @@
   padding: 0 15px;
   color: white;
   text-decoration: none;
-  line-height: 60px;
+  line-height: 34px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
@@ -79,7 +83,7 @@
 .navbar nav .mainnav .dropdown {
   position: absolute;
   list-style: none;
-  top: 60px;
+  top: 30px;
   margin: 0;
   padding: 0;
   background-color: #004A89;
@@ -338,6 +342,19 @@
 }
 
 @media (max-width: 1024px) {
+  .language {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .navbar nav .mainnav .navitems a {
+    padding: 0 12px;
+    font-size: 18px !important;
+    line-height: 38px !important;
+  }
   nav .mainnav {
     position: fixed;
     width: 100%;
@@ -351,6 +368,19 @@
   }
   nav .mainnav .navitems {
     display: block !important;
+    border-bottom: 1px solid rgba(165, 164, 164, 0.3);
+  }
+  nav .mainnav .navitems .dropdown {
+    position: relative;
+    width: 100%;
+    top: 0px;
+    left: 180px;
+    text-align: left;
+  }
+  nav .mainnav .navitems .dropdown .dropdown2 {
+    position: relative;
+    width: 100%;
+    left: 10px;
   }
   nav .mainnav a {
     line-height: 34px !important;
@@ -444,6 +474,14 @@
     font-size: 14px;
     text-align: center;
   }
+  .head .language {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
   nav .mainnav {
     position: fixed;
     width: 100%;
@@ -464,7 +502,7 @@
   nav .checkbtn {
     display: block !important;
     position: relative;
-    left: 260px !important;
+    left: 300px !important;
   }
   nav #click:checked ~ .mainnav {
     left: 0;
